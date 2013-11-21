@@ -73,16 +73,82 @@ def moduleRun(am, gm, se, sam, lg, rc, errs):
            incomingQueue.task_done()
        
         time.sleep(10)
-        sendArduinoMessage(moduleName(), "sayHiArduino")
+        
+        
+        if time == "7:00"
+        sendArduinoMessage(moduleName(), "red:0")
+        sendArduinoMessage(moduleName(), "blue:30")
+        sendArduinoMessage(moduleName(), "green:0")
+       
+       elif time == "8:00" 
+        sendArduinoMessage(moduleName(), "red:50")
+        sendArduinoMessage(moduleName(), "blue:100")
+        sendArduinoMessage(moduleName(), "green:50")
+        
+        elif time == "9:00" 
+        sendArduinoMessage(moduleName(), "red:100")
+        sendArduinoMessage(moduleName(), "blue:150")
+        sendArduinoMessage(moduleName(), "green:100")
+        
+        elif time == "10:00" 
+        sendArduinoMessage(moduleName(), "red:150")
+        sendArduinoMessage(moduleName(), "blue:200")
+        sendArduinoMessage(moduleName(), "green:150")
+        
+        elif time == "11:00" 
+        sendArduinoMessage(moduleName(), "red:200")
+        sendArduinoMessage(moduleName(), "blue:200")
+        sendArduinoMessage(moduleName(), "green:200")
+        
+        elif time == "12:00" 
+        sendArduinoMessage(moduleName(), "red:255")
+        sendArduinoMessage(moduleName(), "blue:255")
+        sendArduinoMessage(moduleName(), "green:255")
+        
+        elif time == "13:00"
+        sendArduinoMessage(moduleName(), "red:200")
+        sendArduinoMessage(moduleName(), "blue:255")
+        sendArduinoMessage(moduleName(), "green:200")
+        
+        elif time == "14:00" 
+        sendArduinoMessage(moduleName(), "red:150")
+        sendArduinoMessage(moduleName(), "blue:160")
+        sendArduinoMessage(moduleName(), "green:150")
+        
+        elif time == "15:00" 
+        sendArduinoMessage(moduleName(), "red:100")
+        sendArduinoMessage(moduleName(), "blue:150")
+        sendArduinoMessage(moduleName(), "green:100")
+        
+        elif time == "16:00" 
+        sendArduinoMessage(moduleName(), "red:50")
+        sendArduinoMessage(moduleName(), "blue:100")
+        sendArduinoMessage(moduleName(), "green:50")
+        
+        elif time == "17:00" 
+        sendArduinoMessage(moduleName(), "red:25")
+        sendArduinoMessage(moduleName(), "blue:75")
+        sendArduinoMessage(moduleName(), "green:25")
+        
+        elif time == "18:00" 
+        sendArduinoMessage(moduleName(), "red:0")
+        sendArduinoMessage(moduleName(), "blue:25")
+        sendArduinoMessage(moduleName(), "green:0")
+        
+        elif time == "19:00" 
+        sendArduinoMessage(moduleName(), "red:0")
+        sendArduinoMessage(moduleName(), "blue:0")
+        sendArduinoMessage(moduleName(), "green:0")
+       
        
     
 #Returns the author of the module    
 def moduleAuthor():
-    return "John Smith"
+    return "J Segill"
     
 #Returns the name of the module    
 def moduleName():
-    return "TestModule"
+    return "lights"
     
 #Returns the module verison
 def moduleVersion():
@@ -90,7 +156,7 @@ def moduleVersion():
 
 #Returns a descripton of the module    
 def moduleDescription():
-    return "A test module"
+    return "A test module for lights"
 
 #Called when the module is stopped
 def stopModule(log):
